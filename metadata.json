@@ -1,0 +1,6 @@
+{
+  "name": "Pengumuman Kelulusan",
+  "description": "Sistem Informasi Kelulusan Siswa SMP Negeri 43 Surabaya Tahun Pelajaran 2026",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

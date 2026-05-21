@@ -1,0 +1,19 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Siswa {
+  id        Int      @id @default(autoincrement())
+  nisn      String   @unique
+  nama      String
+  kelas     String
+  tglLahir  DateTime
+  lulus     Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
